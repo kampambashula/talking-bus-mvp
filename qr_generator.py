@@ -3,7 +3,7 @@ import qrcode
 import os
 
 # URL of the React MVP (update after Netlify deploy)
-url = "https://your-netlify-site.netlify.app/"
+url = "https://talkingbus.netlify.app/"
 
 # Output path in public/images so React can serve it
 output_path = os.path.join("public", "images", "qr_code.png")
