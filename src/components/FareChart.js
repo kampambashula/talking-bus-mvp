@@ -6,6 +6,10 @@ const fares = [
   { route: "Town - Manda Hill", fare: 15 },
   { route: "Town - Kabulonga", fare: 17 },
   { route: "Town - Chainda", fare: 18 },
+  { route: "Lusaka - Kabwe", fare: 260 },
+  { route: "Lusaka - Ndola", fare: 320 },
+  { route: "Lusaka - Kitwe", fare: 330 },
+  { route: "Lusaka- Chingola", fare: 380},
 ];
 
 // 👇 Manually updated when fares change
