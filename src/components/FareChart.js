@@ -2,14 +2,24 @@ import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 
 const fares = [
-  { route: "Lusaka - Chelstone", fare: 10 },
-  { route: "Lusaka - Matero", fare: 12 },
-  { route: "Lusaka - Chilenje", fare: 15 },
+  { route: "Town - Chelstone", fare: 15 },
+  { route: "Town - Manda Hill", fare: 15 },
+  { route: "Town - Kabulonga", fare: 17 },
+  { route: "Town - Chainda", fare: 18 },
 ];
+
+// 👇 Manually updated when fares change
+const LAST_UPDATED = "15 January 2026";
 
 const FareChart = () => (
   <TableContainer component={Paper} sx={{ margin: 3 }}>
-    <Typography variant="h6" sx={{ padding: 2 }}>Current Fares</Typography>
+    <Typography variant="h6" sx={{ padding: 2 }}>Current Bus Fares</Typography>
+    <Typography
+        variant="caption"
+        sx={{ color: 'text.secondary' }}
+      >
+        Last updated: {LAST_UPDATED}
+      </Typography>
     <Table>
       <TableHead sx={{ backgroundColor: '#FF6B00' }}>
         <TableRow>
